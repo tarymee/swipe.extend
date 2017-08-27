@@ -1,12 +1,6 @@
-# SWIPE JS – 移动WEB页面滑动JS库-增强版
+# 移动端Swipe扩展增强版
 
-###　update:
-+ 添加：非循环滚动情况下，滑动超过第一张和最后一张边界时回调函数。
-+ 修复：continue：true不能循环滑动的问题，同时改为无缝的循环方式。2.添加vertical：Boolen参数，支持垂直滑动。
-+ 增加slidesNum、moveSlides参数，分别控制每屏滑块显示数量以及每次滑动的块数
-+ 可通过滑块自定义属性- disableSlide 控制当前滑块是否可以滑动
-
-### 基于swipe2.0进行了以下扩展：
+### 基于swipe2.0进行了以下扩展
 + nav：支持切换导航控制，可用于tab切换。
 + transitionStart：滑动过渡开始触发函数，多用于滑动按需操作。
 + 图片按需功能，默认将图片src2属性替换为真实路径，其他按需，如js按需加载或执行等，可在transitionStart函数中处理。
@@ -84,3 +78,10 @@ swipe(document.getElementById('slider'), {
 
 
 
+
+##　update
+
++ 添加：非循环滚动情况下，滑动超过第一张和最后一张边界时回调函数。
++ 修复：continue：true不能循环滑动的问题，同时改为无缝的循环方式。2.添加vertical：Boolen参数，支持垂直滑动。
++ 增加slidesNum、moveSlides参数，分别控制每屏滑块显示数量以及每次滑动的块数
++ 可通过滑块自定义属性- disableSlide 控制当前滑块是否可以滑动
