@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+<title>demo</title>
+<style type="text/css" media="screen">
+* {
+    margin: 0;
+    padding: 0;
+}
+#slider {
+    width: 320px;
+    height: 200px;
+    overflow: hidden;
+    background: #eee;
+}
+.wrap div {
+    overflow: hidden;
+}
+.current {
+    color: #f00;
+}
+
+.m-nav{
+    text-align: center;
+}
+.m-nav span{
+    padding: 0 5px;
+    margin: 0 5px;
+}
+</style>
+</head>
+
+<body>
+
+<div id="slider">
+    <div class="wrap">
+        <div><img width="320" height="200" lazy-src="http://fpoimg.com/320x200" alt="" /></div>
+        <div><img width="320" height="200" lazy-src="http://fpoimg.com/320x200" alt="" /></div>
+        <div><img width="320" height="200" lazy-src="http://fpoimg.com/320x200" alt="" /></div>
+        <div><img width="320" height="200" lazy-src="http://fpoimg.com/320x200" alt="" /></div>
+        <div><img width="320" height="200" lazy-src="http://fpoimg.com/320x200" alt="" /></div>
+        <div><img width="320" height="200" lazy-src="http://fpoimg.com/320x200" alt="" /></div>
+    </div>
+</div>
+<div id="nav" class="m-nav"></div>
+
+<script src="swipe.extend.js"></script>
+<script>
+new Swipe(document.getElementById('slider'), {
+    continuous: false,
+    slidesNum: 1,
+    moveSlides: 1,
+    auto: 2000,
+    // vertical: true,
+    nav: document.getElementById('nav'),
+    callback: function(index, elem) {},
+    pastStart: function() {
+        console.log(1);
+    },
+    pastEnd: function() {
+        console.log(2);
+    }
+})
+</script>
+</body>
+</html>
